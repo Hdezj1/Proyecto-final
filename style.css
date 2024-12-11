@@ -4,6 +4,64 @@ body{
     background-color: rgb(236, 236, 236);
 }
 
+header{
+    position: relative;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: -.1rem 2rem; /*1 rem equivale a 16 px*/
+}
+
+/*Dentro del header, estilos para el h1*/
+header h1{
+    position: relative;
+    color: white;
+    font-size: .7rem;
+    font-family: 'Cinzel Decorative', serif;
+    left: 7rem;
+}
+
+/*Cambiamos los estilos de la lista no ordenada*/
+nav ul{
+    position: relative;
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    margin-left: 10rem;
+}
+
+/**/
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover{
+    background-color: #555;
+}
+
+.logo{
+    position: absolute;
+    left: 4rem;
+    height: 35px;
+}
+
+.lupa{
+    position: relative;
+    left: 3rem;
+    height: 35px;
+}
+
+.usuario{
+    position: relative;
+    left: -5rem;
+    height: 35px;
+}
+
 /* Contenedor de ejemplo para simular contenido largo */
 .contenido {
     height: 500vh; /* 200% del alto de la pantalla para habilitar el desplazamiento */
@@ -15,6 +73,7 @@ body{
 
 .img {
     position: absolute;
+    justify-content: center;
     top: 0;
     left: 0;
     width: 100%; /* Abarca el ancho total de la pantalla */
@@ -42,7 +101,7 @@ body{
     font-family: 'Cinzel Decorative', serif;
     font-weight: 300;
     text-align: center;
-    margin-top: 15%;
+    margin-top: 11%;
 }
 
 .bienvenida{
@@ -276,7 +335,7 @@ body{
     position: absolute;
     font-size: .8em; /* 1.5 veces el tamaño de la fuente del contenedor padre */
     font-family: 'Cormorant Garamond', serif; /* Aplicar la fuente */
-    margin-top: 90%;
+    margin-top: 1%;
     margin-left: 10%;
     width: 80%;
     height: 4%;
@@ -305,3 +364,13 @@ body{
     z-index: -2; /* Coloca la imagen detrás del contenido */
 }
 
+footer{
+    background-color: #992424;
+    color: rgb(52, 35, 35);
+    padding: 2rem;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    top: 505%;
+}
